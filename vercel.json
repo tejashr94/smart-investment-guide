@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "name": "smart-investment-guide",
+  "buildCommand": null,
+  "outputDirectory": ".",
+  "functions": {
+    "api/chat.js": {
+      "runtime": "edge"
+    }
+  },
+  "routes": [
+    {
+      "src": "/api/chat",
+      "dest": "/api/chat.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
+}
